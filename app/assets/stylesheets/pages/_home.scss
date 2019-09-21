@@ -1,1 +1,6 @@
 // Specific CSS for your home-page
+
+.page-wrapper {
+    overflow: auto;
+    min-height: calc(100vh - 120px)
+}
