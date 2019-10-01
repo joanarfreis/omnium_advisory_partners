@@ -17,3 +17,8 @@
 
 console.log('Hello World from Webpacker')
 import 'bootstrap';
+
+$("ul.nav-tabs a").click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
