@@ -18,7 +18,9 @@
 console.log('Hello World from Webpacker')
 import 'bootstrap';
 
-$("ul.nav-tabs a").click(function (e) {
-    e.preventDefault();
-    $(this).tab('show');
+$(document).ready(function(){
+	$("ul > li").on("click",function(){
+  	$("ul > li").filter(".active").removeClass("active");
+    $(this).addClass("active");
   });
+});
