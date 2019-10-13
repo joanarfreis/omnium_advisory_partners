@@ -1,37 +1,56 @@
-a:hover,a:focus{
-    text-decoration: none;
-    outline: none;
+.test{
+    margin-left: 10%;
+    margin-right: 10%;
 }
-.tab .nav-tabs{
-    border-bottom: 2px solid #ddd;
-}
-.tab .nav-tabs li{
-    margin: 0 2px 0 0;
+
+.parentTabs > .nav {
+    height: 40px;
+    border-bottom: 4px solid #3a5971; 
+} 
+
+.parentTabs > .nav > li.active{
     position: relative;
 }
-.tab .nav-tabs li.active:before{
-    content: "";
-    position: absolute;
-    bottom: -28px;
-    left: 68px;
-    border: 14px solid transparent;
-    border-top-color: red;
-    z-index:9;
+
+.parentTabs > .nav > li > a {
+    color:  #3a5971;
+    font-size: 20px;
 }
-.tab .nav-tabs li.active:after{
+.parentTabs > .nav > li.active:after{
+    border-bottom: 10px solid #3a5971;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
     content: "";
+    height: 0;
+    left: 0;
+    margin: auto;
     position: absolute;
-    bottom: -24px;
-    left: 81px;
-    border: 12px solid transparent;
-    /*border-top-color: #fff;*/
+    right: 0;
+    bottom: 0;
+    width: 0;  
 }
-.tab .nav-tabs li a{
+
+.childTabs > ul {
+    height: 60px;
     border: none;
-    padding: 20px 53px;
-    font-size: 14px;
-    color: #777;
-    background: transparent;
-    border-radius: 0;
-    text-decoration: none;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+
+.childTabs > ul > li > a {
+    color: gray;
+}
+
+.childTabs > ul > li.active > a{
+    color:  #3a5971;
+}
+
+.services-box {
+    background-color:#efefef;
+    padding: 20px;
+}
+
+.services-box h3 {
+    color: #3a5971;
 }

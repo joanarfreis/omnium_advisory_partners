@@ -18,15 +18,15 @@
 console.log('Hello World from Webpacker')
 import 'bootstrap';
 
-$(document).ready(function(){
-	$("ul.business-growth > li").on("click",function(){
-  	$("ul.business-growth > li").filter(".active").removeClass("active");
-    $(this).addClass("active");
-    debugger;
+$(document).ready(
+  function(){$("ul.nav-tabs a").click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
   });
-    $("ul.selected-id > li").on("click",function(){
-    console.log($("ul.selected-id > li:first-child").attr("href"));
-    debugger;
-    });
+  $("ul.parentNavigation li").on("click",function(){
+  	$("ul > li").filter(".active").removeClass("active");
+    $(this).addClass("active");
+  });
 });
+
 
