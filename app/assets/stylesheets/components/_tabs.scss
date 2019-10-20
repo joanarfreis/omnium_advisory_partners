@@ -1,0 +1,56 @@
+.test{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.parentTabs > .nav {
+    height: 40px;
+    border-bottom: 4px solid #3a5971; 
+} 
+
+.parentTabs > .nav > li.active{
+    position: relative;
+}
+
+.parentTabs > .nav > li > a {
+    color:  #3a5971;
+    font-size: 20px;
+}
+.parentTabs > .nav > li.active:after{
+    border-bottom: 10px solid #3a5971;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;  
+}
+
+.childTabs > ul {
+    height: 60px;
+    border: none;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+
+.childTabs > ul > li > a {
+    color: gray;
+}
+
+.childTabs > ul > li.active > a{
+    color:  #3a5971;
+}
+
+.services-box {
+    background-color:#efefef;
+    padding: 20px;
+}
+
+.services-box h3 {
+    color: #3a5971;
+}

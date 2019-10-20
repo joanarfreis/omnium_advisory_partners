@@ -17,3 +17,16 @@
 
 console.log('Hello World from Webpacker')
 import 'bootstrap';
+
+$(document).ready(
+  function(){$("ul.nav-tabs a").click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+  $("ul.parentNavigation li").on("click",function(){
+  	$("ul > li").filter(".active").removeClass("active");
+    $(this).addClass("active");
+  });
+});
+
+
