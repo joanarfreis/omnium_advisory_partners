@@ -268,12 +268,30 @@
                 </div>                           
         </div>
     </div>
-</div>            
-
-<div class="news">
-    <p>Hello</p>
-</div>
+</div>    
+</div>      
 
 <div class="contacts">
-    <p>Hello</p>
+    <div class = "teste1">
+        <div id="map"></div>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1Ijoiam9hbmFyZnJlaXMiLCJhIjoiY2sxeXpxODd5MGtxZjNubXZkY3NhZjd1eiJ9.Y_0geCvryUlGkOPv4oLu4Q';
+            var map = new mapboxgl.Map({
+                container: 'map', // container id
+                style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+                center:[-9.1709844, 38.7223662], // starting position [lng, lat]
+                zoom: 14 // starting zoom
+                });
+            var marker = new mapboxgl.Marker()
+            .setLngLat([ -9.1709844, 38.7223662 ])
+            .addTo(map);
+        </script>
+    </div>        
+    <div class = "teste2">
+        <p>Avenida Engenheiro Duarte Pacheco, Nº 17/19, Sala 14 1070-100 Lisboa</p>
+        <p>Telefone: +351 xx</p>  
+        <p>Fax: xx</p>
+        <p>E-mail: xx</p>
+    </div>    
 </div>
+

@@ -17,6 +17,11 @@
 
 console.log('Hello World from Webpacker')
 import 'bootstrap';
+import './application.css';
+//import 'mapbox-gl/dist/mapbox-gl.css';
+//import { initMapbox } from '../plugins/init_mapbox';
+
+//initMapbox();
 
 $(document).ready(
   function(){$("ul.nav-tabs a").click(function (e) {
@@ -28,5 +33,4 @@ $(document).ready(
     $(this).addClass("active");
   });
 });
-
 

@@ -6,9 +6,10 @@
       <title>OmniumAdvisoryPartners</title>
       <%= csrf_meta_tags %>
       <%= csp_meta_tag %>
-      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-      <%= javascript_pack_tag "application" %>
+      <%= stylesheet_pack_tag 'application', media: 'all' %>
+      <%= stylesheet_link_tag    'application', media: 'all' %>
+      <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+      <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
     </head>
 
     <body>
@@ -40,7 +41,12 @@
     </div>
 
     <%= yield %>
-    
+
+    <div class="footer">
+    <p>© Copyright 2019. All rights reserved. </p>
+    </div>
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_pack_tag "application" %>
 
   </body>
 </html>
