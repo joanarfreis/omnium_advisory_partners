@@ -1,4 +1,4 @@
-/*import mapboxgl from 'mapbox-gl';
+import mapboxgl from 'mapbox-gl';
 
 const initMapbox = () => {
   const mapElement = document.getElementById('map');
@@ -7,20 +7,14 @@ const initMapbox = () => {
     var map = new mapboxgl.Map({
       container: 'map', // container id
       style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
-      center: [-74.50, 40], // starting position [lng, lat]
-      zoom: 9 // starting zoom
+      center:[-9.1709844, 38.7223662], // starting position [lng, lat]
+      zoom: 14 // starting zoom
       });
-  }
+    
+    var marker = new mapboxgl.Marker()
+                .setLngLat([ -9.1709844, 38.7223662 ])
+                .addTo(map);
+    }
 };
 
 export { initMapbox };
-
-
-
-/*
-const markers = 
-new mapboxgl.Marker()
-.setLngLat([ 38.7223662,-9.1709844 ])
-.addTo(map);
-console.log(markers);
-*/

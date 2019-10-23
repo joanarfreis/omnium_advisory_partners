@@ -8,8 +8,6 @@
       <%= csp_meta_tag %>
       <%= stylesheet_pack_tag 'application', media: 'all' %>
       <%= stylesheet_link_tag    'application', media: 'all' %>
-      <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
-      <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
     </head>
 
     <body>
@@ -25,16 +23,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <%= link_to "SOBRE NÓS", "#", class: "nav-link" %>
+              <%= link_to "SOBRE NÓS", "#section-about-us", class: "nav-link" %>
             </li>
             <li class="nav-item">
-              <%= link_to "SERVIÇOS", "#", class: "nav-link" %>
+              <%= link_to "SERVIÇOS", "#section-our-services", class: "nav-link" %>
             </li>
             <li class="nav-item">
-              <%= link_to "NOTÍCIAS", "#", class: "nav-link" %>
-            </li>
-            <li class="nav-item">
-              <%= link_to "CONTACTOS", "#", class: "nav-link" %>
+              <%= link_to "CONTACTOS", "#section-contacts", class: "nav-link" %>
             </li>      
           </ul>
         </div>
@@ -47,6 +42,5 @@
     </div>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag "application" %>
-
   </body>
 </html>
